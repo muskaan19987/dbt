@@ -38,6 +38,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   Analytics:
     # Applies to all files under models/example/
+    +materialized: table
     example:
       queries:
         +materialized: table
+      artist performance:
+        +materialized: table
+      popularity trends:
+        +materialized: table
+      genre performance:
+        +materialized: table
+      spotify_popularity:
+        +materialized: table
+
+
+
